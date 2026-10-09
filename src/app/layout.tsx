@@ -5,7 +5,7 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
 
 export const metadata: Metadata = {
-  title: "MathSign: Belajar Tanpa Batas",
+  title: "MathSign",
   description: "Platform pembelajaran materi pecahan yang visual, interaktif, dan inklusif.",
 };
 
