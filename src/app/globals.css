@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-nunito);
+  --color-primary: #2563eb;
+  --color-brand-yellow: #fbbf24;
+}
+
+body {
+  background: #f8fafc;
+  color: #0f172a;
+}
