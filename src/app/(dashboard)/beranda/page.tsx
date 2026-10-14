@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function BerandaPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6">
+    <div className="mx-auto max-w-6xl">
       {/* Banner */}
       <section className="relative mt-16 flex items-center justify-between rounded-2xl bg-primary px-8 py-4 text-white">
         <div>

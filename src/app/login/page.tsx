@@ -69,7 +69,7 @@ export default function LoginPage() {
         </form>
 
         <p className="mt-3 text-center text-xs text-slate-500">
-          Belum punya akun? <Link href="#" className="font-bold text-primary">Daftar sekarang</Link>
+          Belum punya akun? <Link href="/register" className="font-bold text-primary">Daftar sekarang</Link>
         </p>
       </div>
 

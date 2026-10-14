@@ -60,7 +60,7 @@ export default function PilihanPaketPage() {
   const [selected, setSelected] = useState<string | null>(null);
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-6 mt-0">
+    <div className="mx-auto flex min-h-screen max-w-6xl flex-col">
       {/* Header */}
       <div className="shrink-0 text-center">
         <h1 className="text-2xl font-extrabold">Pilihan Paket MathSign</h1>
