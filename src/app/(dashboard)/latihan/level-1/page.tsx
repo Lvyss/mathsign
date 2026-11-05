@@ -30,7 +30,7 @@ const headings = [
   },
   {
     title: "Amati bagian-bagian pizza",
-    desc: "Pizza dibagi menjadi 8 bagian sama besar. Tiga bagian berwarna merah menunjukkan bagian yang dimakan Andi.",
+    desc: "Pizza dibagi menjadi beberapa bagian sama besar. Bagian berwarna merah menunjukkan bagian yang dimakan.",
   },
   {
     title: "Pilih pecahan yang sesuai",
@@ -140,11 +140,11 @@ export default function LatihanLevel1Page() {
   );
 
   return (
-    <div className="mx-auto max-w-5xl">
-      <h1 className="text-center text-2xl font-extrabold">Latihan Interaktif</h1>
+    <div className="mx-auto max-w-5xl py-6 font-sans">
+      <h1 className="text-center text-2xl font-extrabold text-slate-800">Latihan Interaktif</h1>
 
       {/* Banner level */}
-      <div className="mt-3 flex items-center gap-4 rounded-xl bg-primary px-5 py-4 text-white">
+      <div className="mt-4 flex items-center gap-4 rounded-xl bg-primary px-5 py-4 text-white">
         <LockOpen size={16} />
         <div>
           <p className="text-xs font-extrabold">Level 1 (Menentukan Bentuk Pecahan)</p>
@@ -182,11 +182,11 @@ export default function LatihanLevel1Page() {
       </div>
 
       {/* Judul tahap */}
-      <h2 className="mt-5 text-lg font-extrabold">{headings[step].title}</h2>
+      <h2 className="mt-5 text-lg font-extrabold text-slate-800">{headings[step].title}</h2>
       <p className="mt-1 text-[11px] text-slate-500">{headings[step].desc}</p>
 
       {/* Kartu utama */}
-      <section className="mt-4 rounded-2xl bg-white p-6 shadow-[0_0_6px_rgba(0,0,0,0.12)]">
+      <section className="mt-4 rounded-2xl bg-white p-6 shadow-[0_0_10px_rgba(0,0,0,0.05)] border border-slate-100">
         {/* Tahap 5 pakai judul sendiri, jadi soal disembunyikan */}
         {step < 4 && (
           <>
@@ -200,8 +200,8 @@ export default function LatihanLevel1Page() {
         {/* ===== TAHAP 1: SOAL ===== */}
         {step === 0 && (
           <>
-            <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-2.5 py-1 text-[9px] text-slate-600">
-              <MapPin size={10} className="text-primary" />
+            <p className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-blue-50 px-3 py-1.5 text-[10px] text-slate-600">
+              <MapPin size={12} className="text-primary" />
               {soal.hint}
             </p>
             <Footer nextLabel="Lihat visualisasi" onNext={next} />
@@ -284,8 +284,8 @@ export default function LatihanLevel1Page() {
           <>
             <div className="mt-4 rounded-xl border border-slate-200 p-5">
               <div className="flex items-center justify-between">
-                <p className="text-[11px] font-extrabold">
-                  Pecahan untuk bagian pizza yang dimakan Andi adalah ....
+                <p className="text-[11px] font-extrabold text-slate-800">
+                  Pecahan untuk bagian pizza yang dimakan adalah ....
                 </p>
                 {picked && (
                   <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[9px] font-bold text-primary">
@@ -303,7 +303,7 @@ export default function LatihanLevel1Page() {
                       onClick={() => setSelected(i)}
                       className={`rounded-xl border p-3 text-left transition ${
                         active
-                          ? "border-primary bg-blue-50"
+                          ? "border-primary bg-blue-50 ring-1 ring-primary"
                           : "border-slate-200 bg-white hover:bg-slate-50"
                       }`}
                     >
@@ -377,8 +377,7 @@ export default function LatihanLevel1Page() {
                 <div>
                   <p className="text-base font-extrabold text-green-700">Jawaban benar!</p>
                   <p className="text-[11px] text-slate-600">
-                    Opsi {selected! + 1} · {picked.num}/{picked.den} tepat. 3 bagian dimakan dari 8
-                    bagian sama besar. Bagus, kamu sudah memahami pembilang dan penyebut!
+                    Opsi {selected! + 1} · {picked.num}/{picked.den} tepat. Bagus, kamu sudah memahami pembilang dan penyebut!
                   </p>
                 </div>
               </div>
@@ -422,7 +421,7 @@ export default function LatihanLevel1Page() {
                 <p className="mt-1 text-center text-[10px] font-bold">{soal.caption}</p>
               </div>
               <div>
-                <h3 className="text-sm font-extrabold">Cara menentukan pecahannya</h3>
+                <h3 className="text-sm font-extrabold text-slate-800">Cara menentukan pecahannya</h3>
                 <ol className="mt-3 space-y-3">
                   {soal.explanation.map((e, i) => (
                     <li key={e.title} className="flex items-start gap-3">

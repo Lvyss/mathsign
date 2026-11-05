@@ -104,13 +104,13 @@ export default function RegisterPage() {
 
           <div className="flex items-center justify-center text-[9px] text-slate-400">atau</div>
 
-          <button
-            type="button"
-            className="flex w-full items-center justify-center gap-3 rounded-lg border border-slate-200 py-1.5 text-[11px] font-bold transition hover:bg-slate-50"
-          >
-            <span className="text-[14px] font-extrabold text-blue-600">G</span>
-            Daftar dengan Google
-          </button>
+<Link
+  href="/google-login" // Sesuaikan dengan nama folder yang Anda buat
+  className="text-[12px] flex w-full items-center justify-center gap-3 rounded-lg border border-slate-200 py-1.5 text-sm font-bold transition hover:bg-slate-50"
+>
+  <span className="text-base font-extrabold text-blue-600">G</span>
+  Masuk dengan Google
+</Link>
         </form>
 
         <p className="mt-3 text-center text-[11px] text-slate-500">

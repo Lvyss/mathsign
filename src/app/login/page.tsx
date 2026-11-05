@@ -59,13 +59,13 @@ export default function LoginPage() {
             <span className="h-px flex-1 bg-slate-200" />
           </div>
 
-          <button
-            type="button"
-            className="text-[12px] flex w-full items-center justify-center gap-3 rounded-lg border border-slate-200 py-1.5 text-sm font-bold transition hover:bg-slate-50"
-          >
-            <span className="text-base font-extrabold text-blue-600">G</span>
-            Masuk dengan Google
-          </button>
+<Link
+  href="/google-login" // Sesuaikan dengan nama folder yang Anda buat
+  className="text-[12px] flex w-full items-center justify-center gap-3 rounded-lg border border-slate-200 py-1.5 text-sm font-bold transition hover:bg-slate-50"
+>
+  <span className="text-base font-extrabold text-blue-600">G</span>
+  Masuk dengan Google
+</Link>
         </form>
 
         <p className="mt-3 text-center text-xs text-slate-500">
