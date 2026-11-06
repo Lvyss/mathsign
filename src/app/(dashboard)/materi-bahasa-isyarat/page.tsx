@@ -8,55 +8,55 @@ const materiIsyarat = [
   {
     title: "Pengenalan Angka",
     desc: "Pelajari pengenalan angka 1-10 dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/angka",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "number",
   },
   {
     title: "Istilah Matematika",
     desc: "Pelajari isyarat istilah matematika: penjumlahan, pengurangan, perkalian, pembagian, desimal, persen, pecahan, serta garis bilangan.",
-    href: "/materi-isyarat/istilah",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "math",
   },
   {
     title: "Pecahan Sederhana",
     desc: "Pelajari pecahan sederhana (bentuk a/b) melalui video.",
-    href: "/materi-isyarat/sederhana",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-ab",
   },
   {
     title: "Pecahan Biasa",
     desc: "Pelajari pecahan biasa dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/biasa",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-ab",
   },
   {
     title: "Pecahan Campuran",
     desc: "Pelajari pecahan campuran dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/campuran",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-mixed",
   },
   {
     title: "Pecahan Desimal",
     desc: "Pelajari pecahan desimal dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/desimal",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-desimal",
   },
   {
     title: "Pecahan Persen",
     desc: "Pelajari pecahan persen dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/persen",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-persen",
   },
   {
     title: "Hasil Penjumlahan Dua Pecahan",
     desc: "Pelajari penjumlahan dua pecahan dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/penjumlahan",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-add",
   },
   {
     title: "Hasil Pengurangan Dua Pecahan",
     desc: "Pelajari pengurangan dua pecahan dalam bahasa isyarat melalui video.",
-    href: "/materi-isyarat/pengurangan",
+    href: "https://www.youtube.com/@MathSign_um",
     iconType: "fraction-sub",
   },
 ];
@@ -132,7 +132,6 @@ export default function MateriBahasaIsyaratPage() {
   return (
     <div className=" max-w-5xl  font-sans">
       
-
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-[22px] font-extrabold text-slate-800 mb-2">Materi Bahasa Isyarat</h1>
@@ -158,9 +157,11 @@ export default function MateriBahasaIsyaratPage() {
               </div>
             </div>
 
-            {/* Tombol Aksi */}
+            {/* Tombol Aksi (Tambah target="_blank") */}
             <Link
               href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex w-full items-center justify-center rounded-lg bg-[#2563EB] py-2.5 text-[12px] font-bold text-white transition hover:bg-blue-700 mt-auto"
             >
               Buka
